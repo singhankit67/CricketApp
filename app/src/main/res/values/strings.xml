@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CricketApp</string>
+    <string name="tournament_heading">TOURNAMENT</string>
+    <string name="dummy_tournament_name">Asia ODI Carnival</string>
+    <string name="location_heading">LOCATION</string>
+</resources>

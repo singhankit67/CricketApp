@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/player_list_color">
+
+        <TextView
+            android:id="@+id/tournament_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/tournament_heading"
+            android:textColor="@color/text_color"
+            android:textSize="11dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tournament_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/dummy_tournament_name"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="2dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tournament_heading" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/grey_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="7dp"
+            android:id="@+id/lineDivider1"
+            app:layout_constraintTop_toBottomOf="@id/tournament_name"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/team1_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineDivider1"
+            app:layout_constraintBottom_toTopOf="@id/lineDivider2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="ENG"
+            android:id="@+id/team1_short_text"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/team1_logo"
+            app:layout_constraintStart_toEndOf="@id/team1_logo"
+            app:layout_constraintTop_toTopOf="@id/team1_logo" />
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineDivider1"
+            app:layout_constraintBottom_toTopOf="@id/lineDivider2"
+            android:background="@drawable/grey_circle_view"
+            android:text="vs"
+            android:fontFamily="@font/montserrat"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            android:id="@+id/vs_logo"
+            android:textColor="@color/text_color"
+            android:gravity="center"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/team2_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineDivider1"
+            app:layout_constraintBottom_toTopOf="@id/lineDivider2"
+            android:padding="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IND"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:id="@+id/team2_short_text"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_semibold"
+            app:layout_constraintTop_toTopOf="@id/team2_logo"
+            app:layout_constraintEnd_toStartOf="@id/team2_logo"
+            app:layout_constraintBottom_toBottomOf="@id/team2_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textSize="11dp"
+        android:text="5 ODI series level 1-1"
+            app:layout_constraintTop_toBottomOf="@id/team1_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/text_color"
+            android:id="@+id/status_of_the_series"
+            android:layout_marginTop="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/grey_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/lineDivider2"
+            android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@id/status_of_the_series"/>
+        <TextView
+            android:id="@+id/starts_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="DATE"
+            android:textColor="@color/text_color"
+            android:textSize="11dp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineDivider2" />
+
+        <TextView
+            android:id="@+id/day_and_time_of_the_match_starting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="12 January 2023, 12:45 PM"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/starts_heading" />
+
+        <TextView
+            android:id="@+id/location_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/location_heading"
+            android:textColor="@color/text_color"
+            android:textSize="11dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lineDivider2" />
+
+        <TextView
+            android:id="@+id/location_of_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Dubai"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/location_heading" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:background="@drawable/green_button_view"
+            android:text="team"
+            android:id="@+id/team_info_button"
+            android:textAllCaps="true"
+            android:textColor="@color/button_text_color"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tournament_heading"
+            app:layout_constraintBottom_toBottomOf="@id/tournament_name"
+            android:layout_marginEnd="7dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CricketApp/app/src/main/res/drawable/close_button.xml" value="0.1845" />
+        <entry key="..\:/CricketApp/app/src/main/res/drawable/gradient_for_matchview.xml" value="0.137" />
+        <entry key="..\:/CricketApp/app/src/main/res/drawable/gradient_for_playerdetail.xml" value="0.1845" />
+        <entry key="..\:/CricketApp/app/src/main/res/drawable/green_button_view.xml" value="0.137" />
+        <entry key="..\:/CricketApp/app/src/main/res/drawable/grey_circle_view.xml" value="0.137" />
+        <entry key="..\:/CricketApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/CricketApp/app/src/main/res/layout/activity_squad_details.xml" value="0.23645833333333333" />
+        <entry key="..\:/CricketApp/app/src/main/res/layout/both_team_details.xml" value="0.23541666666666666" />
+        <entry key="..\:/CricketApp/app/src/main/res/layout/custom_dialog.xml" value="0.23645833333333333" />
+        <entry key="..\:/CricketApp/app/src/main/res/layout/fragment_teama_details.xml" value="0.23541666666666666" />
+        <entry key="..\:/CricketApp/app/src/main/res/layout/fragment_teamb_details.xml" value="0.23645833333333333" />
+        <entry key="..\:/CricketApp/app/src/main/res/layout/matchdetails_single_view.xml" value="0.2" />
+        <entry key="..\:/CricketApp/app/src/main/res/layout/player_list_single_item.xml" value="0.23645833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
